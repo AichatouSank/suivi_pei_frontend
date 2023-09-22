@@ -1,0 +1,31 @@
+<div id="main">
+    <h2>Prevision</h2>
+   <div id="button">
+    <p-button icon="pi pi-plus" 
+    label="Ajouter"
+    (click)="showModal()"
+
+    ></p-button>
+    <p-button 
+        icon="pi pi-file-import"
+        label="Importer" 
+        >
+        </p-button >
+        <p-button label="Exporter" 
+        icon="pi pi-file-export"
+
+        >
+        </p-button >
+   </div>
+
+    <p-dialog [style]="{width: '25vw'}" class="dialog"
+    [(visible)]="displayModal" [modal]="true">
+    <ng-template pTemplate="header"><b>Previsions</b>
+     
+    </ng-template>   
+    <ng-template pTemplate="body">
+        <app-add-prevision></app-add-prevision>
+    </ng-template>
+    
+    </p-dialog>
+</div>

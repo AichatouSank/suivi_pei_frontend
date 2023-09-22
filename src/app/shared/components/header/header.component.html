@@ -1,0 +1,36 @@
+<div id="header">
+    <div class="card flex justify-content-center">
+        <p-sidebar [(visible)]="sidebarVisible">
+            <h3>Menu</h3>
+            <ul>
+                <li> <a routerLink="">Dashboard</a></li>
+                <li> <a routerLink="">Utilisateur</a> </li>
+                <li><a routerLink="../../../../prevision">Prevision</a></li>
+                <li> <a routerLink="">Acquisition</a></li>
+                <li> <a routerLink="">Equipement informatique</a> </li>
+                <li><a routerLink="">Structure</a>  </li>
+            </ul>
+        </p-sidebar>
+        <p-button (click)="sidebarVisible = true" icon="pi pi-bars"></p-button>
+    </div>
+    <h3>Logo App</h3>
+    <div id="search">
+        <input type="search">
+        <button class="pi pi-search"></button>
+    </div>
+   
+        <p-button class="param" icon="pi pi-cog"> </p-button>
+           <p-button icon="pi pi-user" ></p-button>
+
+</div>
+<div id="header2"></div>
+<div id="statistiques">
+    <app-stats-prevision></app-stats-prevision>
+    <app-stats-acquisition></app-stats-acquisition>
+    <app-stats-equipement-acquis></app-stats-equipement-acquis>
+    <app-stats-cout-tprevision></app-stats-cout-tprevision>
+    <app-stats-structure></app-stats-structure>
+    <app-stats-equipement-obsoletes></app-stats-equipement-obsoletes>
+    <app-stats-utilisateur></app-stats-utilisateur>
+    <app-stats-cout-tacquisition></app-stats-cout-tacquisition>
+</div>

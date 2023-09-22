@@ -1,0 +1,24 @@
+<div class="card flex justify-content-center">
+    <form [formGroup]="previsionForm" (ngSubmit)="savePrevision">
+  <div>
+    <label for="equipement">Type equipement</label><br>
+    <input type="text" id="equipement"  pInputText formControlName="typeEquipement" placeholder="Entrer le type d'équipement"/>
+  </div>
+  <div>
+    <label for="structure">Structure</label><br>
+    <input type="text" id="structure"  pInputText formControlName="structure" placeholder="Entrer la structure"/><br>
+  </div>
+  <div>
+    <label for="region">Region</label><br>
+    <input type="text" id="region"  pInputText formControlName="region" placeholder="Entrer la région"/><br>
+  </div>
+  <div>
+    <label for="quantite">Quantite</label><br>
+    <input type="text" id="quantite"  pInputText pKeyFilter="int" placeholder="Integers" formControlName="quantite" placeholder="Entrer la quantite"/><br>
+  </div>
+  
+  <p-button icon="pi pi-save" label="Sauvegarder" type="submit"></p-button>
+  <p-button icon="pi pi-ban" class="annuler" label="Annuler" type="button"></p-button>
+  
+</form>
+</div>
